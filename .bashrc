@@ -44,8 +44,11 @@ alias :q='exit'
 alias day='redshift -P -O 6500'
 alias night='redshift -P -O 2500'
 alias oops='cat ~/.forgettable_commands | yad --text-info & '
+
 # for backing up dot files
+# source explaining these: https://www.atlassian.com/git/tutorials/dotfiles
 alias config='/usr/bin/git --git-dir=/home/russellw/.cfg/ --work-tree=/home/russellw'
+alias configp='config push -u origin main'
 
 # killall shortcuts
 alias kd='killall Discord'
