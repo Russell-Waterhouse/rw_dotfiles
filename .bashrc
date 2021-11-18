@@ -334,4 +334,5 @@ alias personal='cp -Rf /personal/* ~'
 # install lolcat
 #sfetch | lolcat
 
-cat ~/.snake.txt 
+# start a terminal with a fun little ascii art drawing
+cat ~/.ascii-art/.snake.txt 
