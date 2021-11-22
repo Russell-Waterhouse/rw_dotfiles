@@ -1,0 +1,16 @@
+COMMAND LINE
+ncdu = command line storage analyzer
+pacman -Rns = Remove a package and all of its crap
+paccache -rk2 = Remove packages cached but not used currently
+kill-orphans = remove packages that were dependencies and are no longer needed
+aafire == ascii art fire
+
+
+I3
+super + alt + h = Move workspace to left monitor
+super + alt + l = Move workspace to left monitor
+super + F10  = spotify
+
+
+WEB BROWSER 
+ctrl + shift + D = bookmark all tabs
