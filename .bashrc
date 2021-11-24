@@ -63,6 +63,7 @@ alias cdh='cd ~/code/haskell'
 alias cdr='cd ~/code/haskell/real_haskell'
 alias cds='cd ~/Documents/notes/seng350'
 alias cde='cd ~/Documents/notes/eos350'
+alias essay='cd ~/Documents/essays/'
 
 #list
 alias ls='ls --color=auto'
@@ -338,4 +339,4 @@ alias personal='cp -Rf /personal/* ~'
 #sfetch | lolcat
 
 # start a terminal with a fun little ascii art drawing
-cat ~/.ascii-art/.snake.txt 
+cat ~/.ascii-art/snake.txt 
