@@ -3,7 +3,8 @@ ncdu = command line storage analyzer
 pacman -Rns = Remove a package and all of its crap
 paccache -rk2 = Remove packages cached but not used currently
 kill-orphans = remove packages that were dependencies and are no longer needed
-aafire == ascii art fire
+aafire = ascii art fire
+configp = push config to github
 
 
 I3
