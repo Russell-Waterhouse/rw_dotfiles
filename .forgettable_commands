@@ -20,3 +20,6 @@ ctrl + shift + D = bookmark all tabs
 INTELLIJ
 alt + F12 = open terminal
 
+
+VIM 
+ctrl + shift + l = prettify haskell code
