@@ -8,6 +8,8 @@ set ts=2
 set shiftwidth=2
 set expandtab
 set background=dark
+set splitbelow
+set termwinsize=20x0
 
 " jk to exit insert mode
 imap jk <esc>

@@ -24,3 +24,4 @@ alt + F12 = open terminal
 
 VIM 
 ctrl + shift + l = prettify haskell code
+:term = open terminal on the bottom
