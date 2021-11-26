@@ -5,6 +5,7 @@ paccache -rk2 = Remove packages cached but not used currently
 kill-orphans = remove packages that were dependencies and are no longer needed
 aafire = ascii art fire
 configp = push config to github
+reset = does what clear should do
 
 
 I3
