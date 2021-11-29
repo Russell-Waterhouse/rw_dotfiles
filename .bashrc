@@ -65,6 +65,7 @@ alias cdh='cd ~/code/haskell'
 alias cdr='cd ~/code/haskell/real_haskell'
 alias cds='cd ~/Documents/notes/seng350'
 alias cde='cd ~/Documents/notes/eos350'
+alias cdcp='cd ~/code/haskell/kata/shopping-cart/'
 alias essay='cd ~/Documents/essays/'
 
 #list
@@ -124,6 +125,9 @@ alias kill-orphans='pacman -Qtdq | pacman -Rns -'
 # paru as aur helper - updates everything
 alias pksyua="paru -Syu --noconfirm"
 alias upall="paru -Syu --noconfirm"
+
+# this command makes a backup & updates main repo and AUR packages
+alias up='backup && update --noconfirm && upall'
 
 #ps
 alias psa="ps auxf"
@@ -341,4 +345,4 @@ alias personal='cp -Rf /personal/* ~'
 #sfetch | lolcat
 
 # start a terminal with a fun little ascii art drawing
-cat ~/.ascii-art/snake.txt 
+cat ~/.ascii-art/flaming_skull.txt 
