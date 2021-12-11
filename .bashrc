@@ -45,7 +45,9 @@ alias day='redshift -P -O 6500'
 alias night='redshift -P -O 2500'
 alias oops='cat ~/.forgettable_commands | yad --text-info & '
 alias backup='sudo timeshift --create'
+# git shortcuts
 alias gpu='git push -u'
+alias gaa='git add -A'
 
 # for backing up dot files
 # source explaining these: https://www.atlassian.com/git/tutorials/dotfiles
