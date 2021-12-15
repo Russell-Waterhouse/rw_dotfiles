@@ -48,6 +48,7 @@ alias backup='sudo timeshift --create'
 # git shortcuts
 alias gpu='git push -u'
 alias gaa='git add -A'
+alias status='git status'
 
 # for backing up dot files
 # source explaining these: https://www.atlassian.com/git/tutorials/dotfiles
