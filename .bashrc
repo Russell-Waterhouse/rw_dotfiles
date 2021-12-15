@@ -142,6 +142,9 @@ alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 #add new fonts
 alias update-fc='sudo fc-cache -fv'
 
+#stack aliases
+alias ghci='stack ghci'
+
 #copy/paste all content of /etc/skel over to home folder - backup of config created - beware
 alias skel='[ -d ~/.config ] || mkdir ~/.config && cp -Rf ~/.config ~/.config-backup-$(date +%Y.%m.%d-%H.%M.%S) && cp -rf /etc/skel/* ~'
 #backup contents of /etc/skel to hidden backup folder in home/user
