@@ -124,6 +124,7 @@ alias merge="xrdb -merge ~/.Xresources"
 # pacman or pm
 alias pacman='sudo pacman --color auto'
 alias update='sudo pacman -Syyu'
+# removes all software packages that were once dependencies and are no longer needed
 alias kill-orphans='pacman -Qtdq | pacman -Rns -'
 
 # paru as aur helper - updates everything
@@ -132,6 +133,10 @@ alias upall="paru -Syu --noconfirm"
 
 # this command makes a backup & updates main repo and AUR packages
 alias up='backup && update --noconfirm && upall'
+
+# this command clears package cache to 2 most recent packages
+# and then removes all software packages that were once dependencies and are no longer needed
+alias maintain='paccache -rk2 && kill-orphans'
 
 #ps
 alias psa="ps auxf"
