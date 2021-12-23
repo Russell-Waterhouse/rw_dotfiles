@@ -35,8 +35,15 @@ bind "set completion-ignore-case on"
 # enable ctrl s passed to programs (used to save in vim for me)
 stty -ixon
 
-# Shortcuts for things I do often
+
+###################################
+# Shortcuts for things I do often #
+###################################
+
 alias todo='vim ~/Documents/todo.txt'
+alias airplane_on='nmcli radio wifi off && sudo systemctl stop bluetooth && echo AIRPLANE MODE ENABLED'
+alias airplane_off='nmcli radio wifi on && sudo systemctl start bluetooth && echo AIRPLANE MODE DISABLED'
+
 # tldr is short man page 
 alias ma=tldr
 alias vimq='vim ~/.config/qtile/config.py'
@@ -45,6 +52,7 @@ alias day='redshift -P -O 6500'
 alias night='redshift -P -O 2500'
 alias oops='cat ~/.forgettable_commands | yad --text-info & '
 alias backup='sudo timeshift --create'
+
 # git shortcuts
 alias gpu='git push -u'
 alias gaa='git add -A'
