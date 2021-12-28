@@ -41,6 +41,8 @@ stty -ixon
 ###################################
 
 alias todo='vim ~/Documents/todo.txt'
+alias toread='vim ~/Documents/toread.txt'
+
 alias airplane_on='nmcli radio wifi off && sudo systemctl stop bluetooth && echo AIRPLANE MODE ENABLED'
 alias airplane_off='nmcli radio wifi on && sudo systemctl start bluetooth && echo AIRPLANE MODE DISABLED'
 
