@@ -14,8 +14,7 @@
 
 export HISTCONTROL=ignoreboth:erasedups
 
-# Make nano the default editor
-
+# Make vim the default editor
 export EDITOR='vim'
 export VISUAL='vim'
 
@@ -74,12 +73,12 @@ alias kt='killall jetbrains-toolbox'
 
 # Shortcut cd commands 
 alias cdc='cd ~/code'
-alias cdn='cd ~/Documents/notes'
+alias cdn='cd ~/Documents/2022_spring/notes'
 alias cdh='cd ~/code/haskell'
 alias cdr='cd ~/code/haskell/real_haskell'
 alias cds='cd ~/Documents/notes/seng350'
 alias cde='cd ~/Documents/notes/eos350'
-alias cdcp='cd ~/code/haskell/kata/shopping-cart/'
+alias cdcp='cd ~/code/haskell/kata/bowling/'
 alias essay='cd ~/Documents/essays/'
 
 #list
@@ -141,12 +140,12 @@ alias kill-orphans='pacman -Qtdq | pacman -Rns -'
 alias pksyua="paru -Syu --noconfirm"
 alias upall="paru -Syu --noconfirm"
 
-# this command makes a backup & updates main repo and AUR packages
-alias up='backup && update --noconfirm && upall'
-
 # this command clears package cache to 2 most recent packages
 # and then removes all software packages that were once dependencies and are no longer needed
 alias maintain='paccache -rk2 && kill-orphans'
+
+# this command makes a backup & updates main repo and AUR packages
+alias up='backup && update --noconfirm && upall && maintain; sudo remove_oldest_backup'
 
 #ps
 alias psa="ps auxf"
@@ -160,6 +159,8 @@ alias update-fc='sudo fc-cache -fv'
 
 #stack aliases
 alias ghci='stack ghci'
+alias st='stack test'
+alias rst='reset && stack test'
 
 #copy/paste all content of /etc/skel over to home folder - backup of config created - beware
 alias skel='[ -d ~/.config ] || mkdir ~/.config && cp -Rf ~/.config ~/.config-backup-$(date +%Y.%m.%d-%H.%M.%S) && cp -rf /etc/skel/* ~'
