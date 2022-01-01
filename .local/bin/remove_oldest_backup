@@ -4,7 +4,7 @@
 
 set timeout 100
 
-spawn timeshift --delete
+spawn sudo timeshift --delete
 
 expect "Enter snapshot number (a=Abort, p=Previous, n=Next):"
 
