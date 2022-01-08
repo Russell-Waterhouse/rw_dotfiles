@@ -480,6 +480,7 @@ bindsym --release $mod+Escape exec xkill
 bindsym $mod+F1 exec --no-startup-id brave;focus
 # qwerty/azerty conflict with w
 bindsym $mod+w exec --no-startup-id brave;focus
+bindsym $mod+control+w exec --no-startup-id firefox;focus
 bindsym control+mod1+f exec --no-startup-id firefox;focus
 bindsym control+mod1+v exec --no-startup-id vivaldi-stable;focus
 bindsym control+mod1+g exec --no-startup-id chromium;focus
