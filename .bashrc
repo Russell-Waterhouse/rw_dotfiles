@@ -69,7 +69,8 @@ alias kd='killall Discord'
 alias km='killall mailspring'
 alias ks='killall slack'
 alias kf='killall flameshot'
-alias kt='killall jetbrains-toolbox'
+alias kj='killall jetbrains-toolbox'
+alias kt='killall teams'
 
 # Shortcut cd commands 
 alias cdc='cd ~/code'
