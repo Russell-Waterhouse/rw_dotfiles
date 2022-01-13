@@ -53,6 +53,7 @@ alias day='redshift -P -O 6500'
 alias night='redshift -P -O 2500'
 alias oops='cat ~/.forgettable_commands | yad --text-info & '
 alias backup='sudo timeshift --create'
+alias zl='less .zoomlinks.txt'
 
 # git shortcuts
 alias gpu='git push -u'
