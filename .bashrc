@@ -58,6 +58,7 @@ alias zl='less .zoomlinks.txt'
 # git shortcuts
 alias gpu='git push -u'
 alias gaa='git add -A'
+alias gcm='git commit -m'
 alias status='git status'
 
 # for backing up dot files
