@@ -88,7 +88,7 @@ alias essay='cd ~/Documents/essays/'
 #list
 alias ls='ls --color=auto'
 alias la='ls -a'
-alias ll='ls -lah'
+alias ll='ls -lah -rt'
 alias l='ls'
 alias l.="ls -A | egrep '^\.'"
 
