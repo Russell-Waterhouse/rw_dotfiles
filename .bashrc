@@ -151,6 +151,9 @@ alias maintain='paccache -rk2 && kill-orphans'
 # this command makes a backup & updates main repo and AUR packages
 alias up='backup && update --noconfirm && upall && maintain; sudo remove_oldest_backup'
 
+# update & shut down
+alias usd='up && shutdown now'
+
 #ps
 alias psa="ps auxf"
 alias psgrep="ps aux | grep -v grep | grep -i -e VSZ -e"
