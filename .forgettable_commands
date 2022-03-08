@@ -6,6 +6,7 @@ kill-orphans = remove packages that were dependencies and are no longer needed
 aafire = ascii art fire
 configp = push config to github
 reset = does what clear should do
+lxsession = tool for setting themes
 
 
 I3
