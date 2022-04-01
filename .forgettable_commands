@@ -26,3 +26,7 @@ alt + F12 = open terminal
 VIM 
 ctrl + l = prettify haskell code
 :term = open terminal on the bottom
+
+NOTE: set 
+$ archlinux-java set java-17-openjdk 
+again after seng371

@@ -67,13 +67,13 @@ alias config='/usr/bin/git --git-dir=/home/russellw/.cfg/ --work-tree=/home/russ
 alias configp='config push -u origin main'
 
 # killall shortcuts
-alias kd='killall Discord'
-alias km='killall mailspring'
-alias ks='killall slack'
-alias kf='killall flameshot'
-alias kj='killall jetbrains-toolbox'
-alias kt='killall teams'
-alias kz='killall zoom'
+alias kd='killall Discord && exit'
+alias km='killall mailspring && exit'
+alias ks='killall slack && exit'
+alias kf='killall flameshot && exit'
+alias kj='killall jetbrains-toolbox && exit'
+alias kt='killall teams && exit'
+alias kz='killall zoom && exit'
 
 # Shortcut cd commands 
 alias cdc='cd ~/code'
@@ -82,7 +82,7 @@ alias cdh='cd ~/code/haskell'
 alias cdr='cd ~/code/haskell/real_haskell'
 alias cds='cd ~/Documents/notes/seng350'
 alias cde='cd ~/Documents/notes/eos350'
-alias cdcp='cd ~/code/haskell/kata/bowling/'
+alias cdcp='cd ~/code/ECE455_FINAL/'
 alias essay='cd ~/Documents/essays/'
 
 #list
