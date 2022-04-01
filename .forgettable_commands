@@ -26,6 +26,7 @@ alt + F12 = open terminal
 VIM 
 ctrl + l = prettify haskell code
 :term = open terminal on the bottom
+gq80<return> = wrap all lines to 80 chars
 
 NOTE: set 
 $ archlinux-java set java-17-openjdk 
