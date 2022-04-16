@@ -29,8 +29,14 @@ fi
 alias todo='vim ~/Documents/todo.txt'
 alias toread='vim ~/Documents/toread.txt'
 
+# airplane mode
 alias airplane_on='nmcli radio wifi off && sudo systemctl stop bluetooth && echo AIRPLANE MODE ENABLED'
 alias airplane_off='nmcli radio wifi on && sudo systemctl start bluetooth && echo AIRPLANE MODE DISABLED'
+
+#tailscale
+alias tailscaleup='sudo systemctl start tailscaled.service'
+alias tailscaledown='sudo systemctl stop tailscaled.service'
+
 
 # tldr is short man page 
 alias ma=tldr
