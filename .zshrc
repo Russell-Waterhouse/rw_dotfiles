@@ -48,6 +48,7 @@ alias oops='cat ~/.forgettable_commands | yad --text-info & '
 alias backup='sudo timeshift --create'
 alias zl='less .zoomlinks.txt'
 alias server='~/server_login.sh'
+alias metasploit='msfconsole'
 
 # git shortcuts
 alias gpu='git push -u'
