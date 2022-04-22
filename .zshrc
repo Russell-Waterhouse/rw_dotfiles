@@ -37,6 +37,10 @@ alias airplane_off='nmcli radio wifi on && sudo systemctl start bluetooth && ech
 alias tailscaleup='sudo systemctl start tailscaled.service'
 alias tailscaledown='sudo systemctl stop tailscaled.service'
 
+# Aliases for my personal scripts
+alias default_scan'=~/scripts/default_scan.sh'
+alias server='~/scripts/server_login.sh'
+
 
 # tldr is short man page 
 alias ma=tldr
@@ -47,7 +51,6 @@ alias night='redshift -P -O 2500'
 alias oops='cat ~/.forgettable_commands | yad --text-info & '
 alias backup='sudo timeshift --create'
 alias zl='less .zoomlinks.txt'
-alias server='~/server_login.sh'
 alias metasploit='msfconsole'
 
 # git shortcuts
