@@ -40,6 +40,7 @@ alias tailscaledown='sudo systemctl stop tailscaled.service'
 # Aliases for my personal scripts
 alias default_scan'=~/scripts/default_scan.sh'
 alias server='~/scripts/server_login.sh'
+alias scrum='~/scripts/log.sh'
 
 
 # tldr is short man page 
