@@ -37,6 +37,9 @@ alias airplane_off='nmcli radio wifi on && sudo systemctl start bluetooth && ech
 alias tailscaleup='sudo systemctl start tailscaled.service'
 alias tailscaledown='sudo systemctl stop tailscaled.service'
 
+#docker 
+alias dockerup='sudo systemctl start docker.service'
+
 # Aliases for my personal scripts
 alias default_scan'=~/scripts/default_scan.sh'
 alias server='~/scripts/server_login.sh'
