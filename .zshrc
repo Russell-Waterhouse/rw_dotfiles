@@ -26,6 +26,8 @@ fi
 # Shortcuts for things I do often #
 ###################################
 
+alias 426='cd ~/src/SENG426'
+
 alias todo='vim ~/Documents/todo.txt'
 alias toread='vim ~/Documents/toread.txt'
 
