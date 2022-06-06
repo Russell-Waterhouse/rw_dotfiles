@@ -1,10 +1,6 @@
 COMMAND LINE
-ncdu = command line storage analyzer
-pacman -Rns = Remove a package and all of its crap
 paccache -rk2 = Remove packages cached but not used currently
 kill-orphans = remove packages that were dependencies and are no longer needed
-aafire = ascii art fire
-configp = push config to github
 reset = does what clear should do
 lxsession = tool for setting themes
 
@@ -12,7 +8,6 @@ lxsession = tool for setting themes
 I3
 super + alt + h = Move workspace to left monitor
 super + alt + l = Move workspace to left monitor
-super + F10  = spotify
 
 
 WEB BROWSER 
@@ -28,6 +23,3 @@ ctrl + l = prettify haskell code
 :term = open terminal on the bottom
 gq80<return> = wrap all lines to 80 chars
 
-NOTE: set 
-$ archlinux-java set java-17-openjdk 
-again after seng371
