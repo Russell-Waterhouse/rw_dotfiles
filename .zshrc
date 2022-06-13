@@ -22,11 +22,14 @@ if [ -d "$HOME/.local/bin" ] ;
   then PATH="$HOME/.local/bin:$PATH"
 fi
 
+EDITOR=vim
+
 ###################################
 # Shortcuts for things I do often #
 ###################################
 
 alias 426='cd ~/src/SENG426'
+alias 499='cd ~/src/seng499/back-end/'
 
 alias todo='vim ~/Documents/todo.txt'
 alias toread='vim ~/Documents/toread.txt'
