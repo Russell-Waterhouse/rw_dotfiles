@@ -98,8 +98,6 @@ alias free="free -mt"
 #continue download
 alias wget="wget -c"
 
-
-
 # this command updates the packages
 alias up='sudo dnf update'
 
@@ -134,6 +132,9 @@ alias cb='sudo cp /etc/skel/.bashrc ~/.bashrc && source ~/.bashrc'
 #switch between bash and zsh
 alias tobash="sudo chsh $USER -s /bin/bash && echo 'Now log out.'"
 alias tozsh="sudo chsh $USER -s /bin/zsh && echo 'Now log out.'"
+
+# docker commands
+alias dockerup='sudo systemctl start docker.service'
 
 
 
@@ -256,3 +257,7 @@ alias personal='cp -Rf /personal/* ~'
 
 # start a terminal with a fun little ascii art drawing
 cat ~/.ascii-art/flaming_skull.txt 
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
