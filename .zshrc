@@ -28,12 +28,14 @@ export NVM_DIR="$HOME/.nvm"
 
 EDITOR=vim
 
+alias dnf='sudo dnf'
+
 ###################################
 # Shortcuts for things I do often #
 ###################################
 
-alias 426='cd ~/src/SENG426'
-alias 499='cd ~/src/seng499/back-end/'
+alias 426='cd ~/src/426'
+alias 499='cd ~/src/499/back-end/'
 
 alias todo='vim ~/Documents/todo.txt'
 alias toread='vim ~/Documents/toread.txt'
