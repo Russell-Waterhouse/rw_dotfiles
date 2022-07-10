@@ -40,6 +40,7 @@ alias dnf='sudo dnf'
 
 alias 426='cd ~/src/426'
 alias 499='cd ~/src/499/back-end/'
+alias rebuild='sudo rm -rf data && docker-compose up -d --build && sleep 2 && ./test.sh'
 
 alias todo='vim ~/Documents/todo.txt'
 alias toread='vim ~/Documents/toread.txt'
@@ -181,5 +182,5 @@ alias fix-gpg-retrieve="gpg2 --keyserver-options auto-key-retrieve --receive-key
 
 
 
-cat ~/.ascii-art/snowflake.txt 
+cat ~/.ascii-art/troll.txt 
 
