@@ -4,6 +4,8 @@ kill-orphans = remove packages that were dependencies and are no longer needed
 reset = does what clear should do
 lxsession = tool for setting themes
 
+DOCKER: 
+docker run -it <Container_name> sh = get into a container that isn't running
 
 I3
 super + alt + h = Move workspace to left monitor
