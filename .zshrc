@@ -131,7 +131,7 @@ alias userlist="cut -d: -f1 /etc/passwd"
 
 
 # this command updates repos
-alias up='sudo dnf update'
+alias up='sudo dnf update -y && flatpak update -y'
 
 # update & shut down
 alias usd='up && shutdown now'
