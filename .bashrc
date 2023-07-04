@@ -43,14 +43,27 @@ alias dnf='sudo dnf'
 
 # tldr is a short man page 
 alias ma=tldr
+
+# vim-like exit
 alias :q='exit'
-alias sc='less ~/.forgettable_commands'
+
+# file of shortcuts
+alias sc='less ~/.shortcuts'
+
 
 # git shortcuts
-alias gpu='git push -u'
-alias gaa='git add -A'
-alias gcm='git commit -m'
-alias status='git status'
+alias gp="git push"
+alias st="git status"
+alias di="git diff"
+alias co="git checkout"
+gpu() {
+    CURRBRANCH=$(git rev-parse --abbrev-ref HEAD)
+    firefox $(git push --set-upstream origin $CURBRANCH 2>&1 | grep --only-matching https://github.com/.*/$CURBRANCH)
+}
+gcam() {
+    git add -A
+    git commit -m "$*"
+}
 
 # for backing up dot files
 # source explaining these: https://www.atlassian.com/git/tutorials/dotfiles
