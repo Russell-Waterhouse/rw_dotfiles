@@ -38,6 +38,7 @@ alias dnf='sudo dnf'
 # Shortcuts for things I do often #
 ###################################
 
+
 alias 426='cd ~/src/426'
 alias 499='cd ~/src/499/back-end/'
 alias rebuild='sudo rm -rf data && docker-compose up -d --build && sleep 2 && ./test.sh'
@@ -72,7 +73,7 @@ alias metasploit='msfconsole'
 
 # git shortcuts
 alias gpu='git push -u'
-alias gaa='git add -A'
+alias ga='git add -A'
 alias gcm='git commit -m'
 alias status='git status'
 
@@ -182,5 +183,9 @@ alias fix-gpg-retrieve="gpg2 --keyserver-options auto-key-retrieve --receive-key
 
 
 
-cat ~/.ascii-art/troll.txt 
+alias vim="nvim"
+alias open="nautilus"
+alias edit='gnome-text-editor'
 
+
+cat ~/.ascii-art/troll.txt 
