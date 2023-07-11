@@ -1,0 +1,6 @@
+VIM:
+    gq80<return> = wrap all lines to 80 chars
+                set by default
+
+
+
