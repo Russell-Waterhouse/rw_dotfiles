@@ -18,7 +18,6 @@ export HISTCONTROL=ignoreboth:erasedups
 export EDITOR='nvim'
 export VISUAL='nvim'
 
-PS1='[\u@\h \W]\$ '
 
 if [ -d "$HOME/.bin" ] ;
   then PATH="$HOME/.bin:$PATH"
@@ -31,6 +30,12 @@ fi
 if [ -d "$HOME/scripts" ] ;
   then PATH="$HOME/scripts:$PATH"
 fi
+
+# add java to path
+PATH="$PATH:$HOME/.jdks/openjdk-20.0.2/bin/"
+
+# Add ruby to path
+PATH="$PATH:/usr/share/gems:$HOME/.local/share/gem/ruby:/usr/local/share/gems"
 
 #ignore upper and lowercase when TAB completion
 bind "set completion-ignore-case on"
@@ -58,12 +63,13 @@ alias di="git diff"
 alias co="git checkout"
 gpu() {
     CURRBRANCH=$(git rev-parse --abbrev-ref HEAD)
-    firefox $(git push --set-upstream origin $CURBRANCH 2>&1 | grep --only-matching https://github.com/.*/$CURBRANCH)
+    firefox $(git push --set-upstream origin $CURRBRANCH 2>&1 | grep --only-matching https://github.com/.*/$CURRBRANCH)
 }
 gcam() {
     git add -A
     git commit -m "$*"
 }
+alias gaa="git add -A"
 
 # for backing up dot files
 # source explaining these: https://www.atlassian.com/git/tutorials/dotfiles
@@ -73,8 +79,11 @@ alias configp='config push -u origin main'
 #list
 alias ls='ls -lah --color=auto'
 
-# I use neovim, not vim
-alias vim='nvim'
+# v is shorter than vim
+alias v='nvim'
+
+# e - short for edit
+alias e='nvim .'
 
 #fix obvious typo's
 alias cd..='cd ..'
@@ -132,9 +141,28 @@ ex ()
   fi
 }
 
+# Node version manager
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
+#[ -f "/home/russ/.ghcup/env" ] && source "/home/russ/.ghcup/env" # ghcup-env
+[ -f "/home/russ/.ghcup/env" ] && source "/home/russ/.ghcup/env" # ghcup-env
+
+alias open='nautilus'
+alias fabric='~/repos/fabric/client/fabric'
+alias t='tmux'
+
+
+# Show the current git branch in the terminal prompt
+# Prompt
+export PS1="\\w[\$(git branch 2>/dev/null | grep '^*' | colrm 1 2)]\$ "
+. "$HOME/.cargo/env"
+
+eval "$(zoxide init bash)"
+
+alias cd="z"
 
 # start a terminal with a fun little ascii art drawing
 cat ~/.ascii-art/snowflake.txt 
