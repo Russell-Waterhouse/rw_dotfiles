@@ -119,6 +119,7 @@ export NVM_DIR="$HOME/.nvm"
 alias open='nautilus'
 alias fabric='~/repos/fabric/client/fabric'
 alias t='tmux'
+alias ta='tmux attach'
 
 # Show the current git branch in the terminal prompt
 # Prompt
